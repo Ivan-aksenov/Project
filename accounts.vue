@@ -76,6 +76,8 @@ export default {
       this.editIndex = index;
       this.isDeleteModalOpen = !this.isDeleteModalOpen;
     },
+
+    //delete sysytem
     deleteEmployee() {
       this.employees.splice(this.editIndex, 1);
       this.isDeleteModalOpen = false;
@@ -555,6 +557,8 @@ export default {
     <div class="flex justify-center mb-5    mt-20">
    
       <button @click="toggleDeleteModal" class="px-8 py-4 bg-gray-300 rounded-md text-white mr-2">Cancel</button>
+
+      <!--delete function-->
       <button @click="deleteEmployee" class="px-8 py-4 bg-red-600 rounded-md text-white ml-2">Delete</button>
     </div>
   </div>
